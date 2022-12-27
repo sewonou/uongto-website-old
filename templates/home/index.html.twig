@@ -1,0 +1,166 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+{% block stylesheets %}
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+{% endblock %}
+{% block body %}
+    <section class="slider">
+        <input type="radio" name="slide" id="slide-1" checked>
+        <input type="radio" name="slide" id="slide-2">
+        <input type="radio" name="slide" id="slide-3">
+
+        <div class="slides">
+            <div class="slide slide-1">
+                <div class="slide-data">
+                    <h1>Title 1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio porro sit ullam.</p>
+                    <a class="btn" href="#">read more <i class="fas fa-plus"></i></a>
+                </div>
+            </div>
+            <div class="slide slide-2">
+                <div class="slide-data">
+                    <h1>Title 2</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio porro sit ullam.</p>
+                    <a class="btn" href="#">read more <i class="fas fa-plus"></i></a>
+                </div>
+            </div>
+            <div class="slide slide-3">
+                <div class="slide-data">
+                    <h1>Title 3</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio porro sit ullam.</p>
+                    <a class="btn" href="#">read more <i class="fas fa-plus"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="arrows arrow-left">
+            <label for="slide-3"><span><i class="fas fa-angle-left"></i></span></label>
+            <label for="slide-2"><span><i class="fas fa-angle-left"></i></span></label>
+            <label for="slide-1"><span><i class="fas fa-angle-left"></i></span></label>
+        </div>
+        <div class="arrows arrow-right">
+            <label for="slide-2"><span><i class="fas  fa-angle-right"></i></span></label>
+            <label for="slide-3"><span><i class="fas fa-angle-right"></i></span></label>
+            <label for="slide-1"><span><i class="fas fa-angle-right"></i></span></label>
+        </div>
+
+        <div class="dots">
+            <label for="slide-1"></label>
+            <label for="slide-2"></label>
+            <label for="slide-5"></label>
+        </div>
+    </section>
+    <section class="wrapper">
+        <h2 class="box-title">Title parts</h2>
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fa-solid fa-heart"></i>
+                <h3>Objectif</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam animi assumenda at atque autem corporis debitis deserunt, dignissimos ea eius fugit id iusto magnam maxime molestias neque nesciunt nihil odit officiis provident quidem quisquam reprehenderit sed tempore, temporibus voluptates! Amet eos pariatur praesentium repudiandae voluptatem. Consectetur consequuntur magnam quos.</p>
+                <a href="#" class="btn">Read More ...</a>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-heart"></i>
+                <h3>Objectif</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam animi assumenda at atque autem corporis debitis deserunt, dignissimos ea eius fugit id iusto magnam maxime molestias neque nesciunt nihil odit officiis provident quidem quisquam reprehenderit sed tempore, temporibus voluptates! Amet eos pariatur praesentium repudiandae voluptatem. Consectetur consequuntur magnam quos.</p>
+                <a href="#" class="btn">Read More ...</a>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-heart"></i>
+                <h3>Objectif</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam animi assumenda at atque autem corporis debitis deserunt, dignissimos ea eius fugit id iusto magnam maxime molestias neque nesciunt nihil odit officiis provident quidem quisquam reprehenderit sed tempore, temporibus voluptates! Amet eos pariatur praesentium repudiandae voluptatem. Consectetur consequuntur magnam quos.</p>
+                <a href="#" class="btn">Read More ...</a>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-heart"></i>
+                <h3>Objectif</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam animi assumenda at atque autem corporis debitis deserunt, dignissimos ea eius fugit id iusto magnam maxime molestias neque nesciunt nihil odit officiis provident quidem quisquam reprehenderit sed tempore, temporibus voluptates! Amet eos pariatur praesentium repudiandae voluptatem. Consectetur consequuntur magnam quos.</p>
+                <a href="#" class="btn">Read More ...</a>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-heart"></i>
+                <h3>Objectif</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam animi assumenda at atque autem corporis debitis deserunt, dignissimos ea eius fugit id iusto magnam maxime molestias neque nesciunt nihil odit officiis provident quidem quisquam reprehenderit sed tempore, temporibus voluptates! Amet eos pariatur praesentium repudiandae voluptatem. Consectetur consequuntur magnam quos.</p>
+                <a href="#" class="btn">Read More ...</a>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-heart"></i>
+                <h3>Objectif</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam animi assumenda at atque autem corporis debitis deserunt, dignissimos ea eius fugit id iusto magnam maxime molestias neque nesciunt nihil odit officiis provident quidem quisquam reprehenderit sed tempore, temporibus voluptates! Amet eos pariatur praesentium repudiandae voluptatem. Consectetur consequuntur magnam quos.</p>
+                <a href="#" class="btn">Read More ...</a>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="parallax">
+        <div class="parallax-data">
+            <h2>Text content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aspernatur aut consequatur delectus, enim est ipsum non obcaecati possimus repellendus reprehenderit sint tempora voluptatum? A accusamus aspernatur, at cumque delectus doloribus eos eum ex facere fuga fugit iure magni nam nostrum obcaecati provident quaerat quidem quis reiciendis sed tempora temporibus tenetur voluptatum? Adipisci aliquam aperiam, assumenda deleniti ducimus ea earum eveniet explicabo facere fugiat fugit harum hic modi, neque nostrum obcaecati officia recusandae rerum sed suscipit, vel voluptas voluptatum. Ab delectus deleniti dolores eligendi est expedita inventore ipsa libero magnam maiores minima praesentium, provident quas repudiandae rerum sapiente, ullam vero.</p>
+        </div>
+
+    </section>
+    <section class="carousel-section">
+        <div class="slider-cards owl-carousel">
+            <div class="card">
+                <div class="img"><img src="{{ asset('assets/img/slide-1.jpg') }}" alt=""></div>
+                <div class="content">
+                    <div class="title">Briana Tozour</div>
+                    <div class="sub-title">Graphic Designer</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.</p>
+                    <div class="btn">
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="{{ asset('assets/img/slide-2.jpg') }}" alt=""></div>
+                <div class="content">
+                    <div class="title">Pricilla Preez</div>
+                    <div class="sub-title">Web Developer</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.</p>
+                    <div class="btn">
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="{{ asset('assets/img/slide-3.jpg') }}" alt=""></div>
+                <div class="content">
+                    <div class="title">Eliana Maia</div>
+                    <div class="sub-title">App Developer</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.</p>
+                    <div class="btn">
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="{{ asset('assets/img/slide-4.jpg') }}" alt=""></div>
+                <div class="content">
+                    <div class="title">Eliana Maia</div>
+                    <div class="sub-title">App Developer</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis quae animi nihil minus sed unde voluptas cumque.</p>
+                    <div class="btn">
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        $(".slider-cards").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000, //2000ms = 2s;
+            autoplayHoverPause: true,
+        });
+    </script>
+{% endblock %}
