@@ -1,18 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html class="loading" lang="en" data-textdirection="ltr">
     <head>
         <meta charset="UTF-8">
-        <title>Admin Panel{% block title %}{% endblock %}</title>
+        <title>Slimer Admin Panel | {% block title %}{% endblock %}</title>
         <link rel="icon" href="{{ asset('assets/img/favicon.jpg') }}">
+        <link rel="apple-touch-icon" href="{{ asset('app-assets/images/ico/apple-icon-120.png') }}">
+        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('app-assets/images/ico/favicon.ico') }}">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700" rel="stylesheet">
+
+        <!-- BEGIN: Vendor CSS-->
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/vendors/css/vendors.min.css') }}">
+        <!-- END: Vendor CSS-->
+
+        <!-- BEGIN: Theme CSS-->
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/css/bootstrap.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/css/bootstrap-extended.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/css/colors.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/css/components.css') }}">
+        <!-- END: Theme CSS-->
+
+        <!-- BEGIN: Page CSS-->
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/css/core/menu/menu-types/vertical-menu.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/css/core/colors/palette-gradient.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/css/pages/hospital.css') }}">
+        <!-- END: Page CSS-->
+
+        <!-- BEGIN: Custom CSS-->
+        <link rel="stylesheet" type="text/css" href="{{ asset('app-assets/assets/css/style.css') }}">
+        <!-- END: Custom CSS-->
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
 
+    </head>
+    <body class="vertical-layout vertical-menu 2-columns   fixed-navbar" data-open="click" data-menu="vertical-menu" data-col="2-columns">
+        {{ include('_partials/_adminNavBar.html.twig') }}
+        {{ include('_partials/_adminHeader.html.twig') }}
+        <!-- BEGIN: Content-->
+        <div class="app-content content">
+            <div class="content-overlay"></div>
+            <div class="content-wrapper">
+                {% block body %}{% endblock %}
+            </div>
+        </div>
+        <div class="sidenav-overlay"></div>
+        <div class="drag-target"></div>
+        {{ include('_partials/_adminFooter.html.twig') }}
+
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
+        <!-- BEGIN: Vendor JS-->
+        <script src="{{ asset('app-assets/vendors/js/vendors.min.js') }}"></script>
+        <!-- BEGIN Vendor JS-->
+
+        <!-- BEGIN: Page Vendor JS-->
+        <script src="{{ asset('app-assets/vendors/js/charts/chart.min.js') }}"></script>
+        <!-- END: Page Vendor JS-->
+
+        <!-- BEGIN: Theme JS-->
+        <script src="{{ asset('app-assets/js/core/app-menu.js') }}"></script>
+        <script src="{{ asset('app-assets/js/core/app.js') }}"></script>
+        <!-- END: Theme JS-->
+
+        <!-- BEGIN: Page JS-->
+        <script src="{{ asset('app-assets/js/scripts/pages/appointment.js') }}"></script>
+        <!-- END: Page JS-->
     </body>
 </html>
